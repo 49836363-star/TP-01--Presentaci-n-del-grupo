@@ -1,4 +1,4 @@
-namespace TP01;
+namespace TP01.Models;
 public class Integrantes
 {
     private int DNI;
