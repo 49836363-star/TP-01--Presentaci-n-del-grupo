@@ -1,19 +1,19 @@
 namespace TP01.Models;
-public class Integrantes
+public class Integrante
 {
+    private string nombre;
     private int DNI;
     private string foto;
-    private datetime fecha;
-    private string nombre;
+    private DateTime fecha;
     private List<string> Familiares;
     private List<string> Intereses;
 
-    public Integrantes(int DNI, string foto, datetime fecha, string nombre, List<string> Familiares, List<string> Intereses)
+    public Integrante(string nombre, int DNI, string foto, DateTime fecha, List<string> Familiares, List<string> Intereses)
     {
+        this.nombre = nombre;
         this.DNI = DNI;
         this.foto = foto;
         this.fecha = fecha;
-        this.nombre = nombre;
         this.Familiares = Familiares;
         this.Intereses = Intereses;
     }
