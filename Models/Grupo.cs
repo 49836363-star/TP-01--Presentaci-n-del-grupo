@@ -22,7 +22,7 @@ public class Grupo
         Integrantes.Add(49836363, i1);
         Integrantes.Add(50324501, i2);
     }
-    public Dictionary DevolverIntegrantes()
+    public Dictionary<int, Integrante> DevolverIntegrantes()
     {
         return this.Integrantes;
     }

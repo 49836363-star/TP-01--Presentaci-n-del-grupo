@@ -17,4 +17,28 @@ public class Integrante
         this.Familiares = Familiares;
         this.Intereses = Intereses;
     }
+    public string GetNombre()
+    {
+        return this.nombre;
+    }
+    public int GetDNI()
+    {
+        return this.DNI;
+    }
+    public string GetFoto()
+    {
+        return this.foto;
+    }
+    public DateTime GetFecha()
+    {
+        return this.fecha;
+    }
+    public List<string> GetFamiliares()
+    {
+        return this.Familiares;
+    }
+    public List<string> GetIntereses()
+    {
+        return this.Intereses;
+    }
 }

@@ -15,16 +15,16 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        Grupo g1= new Grupo()
+        Grupo g1= new Grupo();
         ViewBag.Grupo= g1.DevolverIntegrantes();
         return View();
     }
     public IActionResult SelectIntegrante(int dni)
     {
-        Grupo g1= new Grupo()
-        ViewBag.Grupo = g1.GetIntegrante(dni);
+        Grupo g1= new Grupo();
+        ViewBag.integrante = g1.GetIntegrante(dni);
         ViewBag.DNI= dni;
-        return view();
+        return View();
     }
 
 
