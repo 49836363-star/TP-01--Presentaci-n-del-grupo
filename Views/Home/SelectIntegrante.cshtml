@@ -1,10 +1,32 @@
+<div class= "integrante">
+    <h2>
+        <ul>
+            <li>Nombre:@ViewBag.integrante.GetNombre()</li>
+            <li>DNI:@ViewBag.integrante.GetDNI()</li>
+            <li>Foto: <img src= "@ViewBag.integrante.GetFoto()" alt="foto"> </li>
+            <li>Fecha de Nacimiento: @ViewBag.integrante.GetFecha().ToShortDateString()</li>
+            <li> Familiares:</li> 
+            <ol>
+                @foreach(string familiar in ViewBag.integrante.GetFamiliares())
+                {
+                    <h2>
+                    <li>@familiar</li>
+                    </h2>
+                }
+            </ol>
 
-<ul>
-    <li>@ViewBag.integrante.GetNombre()</li>
-    <li>@ViewBag.integrante.GetDNI()</li>
-    <li>@ViewBag.integrante.GetFoto()</li>
-    <li>@ViewBag.integrante.GetFecha()</li>
-    <li>@ViewBag.integrante.GetFamiliares()</li>
-    foreach
-    <li>@ViewBag.integrante.GetIntereses()</li>
-    foreach
+            <li> Intereses: </li>
+            <ol>
+                @foreach(string interes in ViewBag.integrante.GetIntereses())
+                {
+                    <h2>
+                    <li>@interes</li>
+                    </h2>
+                }
+            </ol>
+        </ul>
+        <a href='@Url.Action("Index", "Home")'>Volver al inicio</a>
+    </h2>
+</div>
+
+   

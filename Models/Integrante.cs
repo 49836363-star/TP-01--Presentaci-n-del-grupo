@@ -41,4 +41,4 @@ public class Integrante
     {
         return this.Intereses;
     }
-}
+}   
